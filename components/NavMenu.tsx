@@ -10,6 +10,7 @@ import { RiShoppingCartLine } from "react-icons/ri";
 import { LiaCoinsSolid } from "react-icons/lia";
 import { IoWarningOutline } from "react-icons/io5";
 import { HiOutlineChartPie } from "react-icons/hi2";
+import { CiPower } from "react-icons/ci";
 
 export const NavMenu = () => {
     const [opened, { open, close, toggle }] = useDisclosure(false);
@@ -17,19 +18,28 @@ export const NavMenu = () => {
     return (
         <div className="bg-amber-400 w-[55px] rounded-r-sm">
             <Drawer opened={opened} onClose={close} title="Hotel PMS">
-                <NavLink
-                    href="/"
-                    label="Dashboard"
-                    leftSection={<MdSpeed />}
-                />
-                <div className='grid grid-cols-1'>
-                    <DeskPullout />
-                    <GroupsPullout />
-                    <RevenuePullout />
-                    <HousekeepingPullout />
-                    <FinancialsPullout />
-                    <ActionsPullout />
-                    <ReportsPullout />
+                <div className='flex flex-col justify-between'>
+                    <div className='grid grid-cols-1'>
+                        <NavLink
+                            href="/"
+                            label="Dashboard"
+                            leftSection={<MdSpeed />}
+                        />
+                        <DeskPullout />
+                        <GroupsPullout />
+                        <RevenuePullout />
+                        <HousekeepingPullout />
+                        <FinancialsPullout />
+                        <ActionsPullout />
+                        <ReportsPullout />
+                    </div>
+                    <div>
+                        <NavLink
+                            href='/api/auth/signout'
+                            label="Sign Out"
+                            leftSection={<CiPower />}
+                        />
+                    </div>
                 </div>
             </Drawer>
 
