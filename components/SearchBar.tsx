@@ -25,8 +25,8 @@ const actions: SpotlightActionData[] = [
 
 export const SearchBar = () => {
     return (
-        <div className='w-full'>
-            <Button onClick={spotlight.open} className='w-full'>Open spotlight</Button>
+        <div className='flex justify-center'>
+            <Button onClick={spotlight.open} fullWidth className='mx-4 my-2'>Search</Button>
             <Spotlight
                 actions={actions}
                 nothingFound="Nothing found..."

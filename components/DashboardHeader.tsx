@@ -16,7 +16,7 @@ export const DashboardHeader = () => {
             <div>
                 placeholder
             </div>
-            <div className="flex items-center justify-center">
+            <div className="col-span-3">
                 <SearchBar />
             </div>
         </div>
