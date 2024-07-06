@@ -33,9 +33,7 @@ export const NavMenu = () => {
                 </div>
             </Drawer>
 
-            <UnstyledButton onClick={open}>
-                <Burger size="lg" lineSize={4} color='white' opened={opened} onClick={toggle} aria-label="Toggle navigation" className='mx-2' />
-            </UnstyledButton>
+            <Burger size="lg" lineSize={4} color='white' opened={opened} onClick={open} aria-label="Toggle navigation" className='mx-2' />
         </div>
     );
 }
