@@ -1,7 +1,6 @@
 import { NavMenu } from "@/components/NavMenu";
-import { SearchBar } from "./SearchBar";
 
-export const DashboardHeader = ({ user }:any) => {
+export const Header = ({ user }:any) => {
 
     const date = new Date();
     const formattedDate = date.toDateString();
@@ -27,9 +26,6 @@ export const DashboardHeader = ({ user }:any) => {
             </div>
             <div>
                 placeholder
-            </div>
-            <div className="col-span-3">
-                <SearchBar />
             </div>
         </div>
     )

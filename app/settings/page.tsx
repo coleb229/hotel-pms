@@ -1,9 +1,9 @@
 'use server';
 import { Header } from "@/components/Header";
-import { SearchBar } from "@/components/SearchBar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import { SettingsSideTabs } from "@/components/SettingsSideTabs";
 
 export default async function Home() {
 
@@ -16,8 +16,8 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Header user={session} />
-      <SearchBar />
+        <Header user={session} />
+        <SettingsSideTabs />
     </main>
   );
 }

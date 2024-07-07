@@ -11,6 +11,7 @@ import { LiaCoinsSolid } from "react-icons/lia";
 import { IoWarningOutline } from "react-icons/io5";
 import { HiOutlineChartPie } from "react-icons/hi2";
 import { CiPower } from "react-icons/ci";
+import { GoGear } from "react-icons/go";
 
 export const NavMenu = () => {
     const [opened, { open, close, toggle }] = useDisclosure(false);
@@ -34,6 +35,11 @@ export const NavMenu = () => {
                         <ReportsPullout />
                     </div>
                     <div>
+                        <NavLink
+                            href="/settings"
+                            label="Settings"
+                            leftSection={<GoGear />}
+                        />
                         <NavLink
                             href='/api/auth/signout'
                             label="Sign Out"
