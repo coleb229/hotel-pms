@@ -66,7 +66,7 @@ export const AddRoom = () => {
                             <Switch className='py-2' name='suite' />
                         </div>
                     </div>
-                    
+
                     <div> {/* Right Side */}
                       <h2 className='text-lg font-semibold'>Room Features</h2>
                       <div className='grid grid-cols-2 p-4 bg-[#f2f2f2]'>
@@ -105,3 +105,4 @@ export const AddRoom = () => {
     </>
   );
 }
+{//good god}
