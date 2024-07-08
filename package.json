@@ -14,7 +14,7 @@
     "@mantine/dates": "^7.11.1",
     "@mantine/hooks": "^7.11.1",
     "@mantine/spotlight": "^7.11.1",
-    "@prisma/client": "^5.16.1",
+    "@prisma/client": "^5.0.0",
     "dayjs": "^1.11.11",
     "next": "14.2.4",
     "next-auth": "^4.24.7",
@@ -32,7 +32,7 @@
     "postcss": "^8.4.39",
     "postcss-preset-mantine": "^1.15.0",
     "postcss-simple-vars": "^7.0.1",
-    "prisma": "^5.16.1",
+    "prisma": "^5.0.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

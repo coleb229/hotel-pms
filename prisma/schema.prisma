@@ -14,13 +14,13 @@ datasource db {
 }
 
 model Room {
-  id        String   @id @default(cuid()) @map("_id") @db.ObjectId
-  number    Int
-  capacity  Int
-  floor     Int
-  type      String
-  section   String
-  suite     Boolean
-  features  String[]
-  likes     String[]
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  number   Int      @unique
+  capacity Int
+  floor    Int
+  type     String
+  section  String
+  suite    Boolean
+  features String[]
+  likes    String[]
 }
