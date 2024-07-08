@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import React from "react";
+import { AddRoom } from "@/components/AddRoom";
 
 export default async function Home() {
 
@@ -17,6 +18,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Header user={session} />
+      <AddRoom />
     </main>
   );
 }
